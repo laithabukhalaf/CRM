@@ -1,0 +1,320 @@
+
+.App {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.clients{
+  margin: 5px;
+}
+
+.client{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); 
+  border-bottom:  2px solid rgba(148, 148, 148, 0.534);
+  padding: 10px;
+ 
+}
+
+#header{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); 
+  background-color:gold;
+  padding: 10px;
+  box-shadow: 5px 5px 8px 0px rgba(126, 118, 118, 0.75);
+  margin-top: 8px;
+}
+
+
+.badgesSection{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) ;
+  margin-top: 15px;
+}
+
+.badge{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-areas: 
+  "i n"
+  "i t";
+}
+
+.iconBadge{
+  grid-area: i;
+  border-radius: 80%;
+  margin-left: 3vw;
+  color: #FFC107;
+  font-size: 45px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 13px;
+}
+   
+
+.numberBadge{
+  grid-area: n;
+  font-size: 30px;
+}
+
+.textBadge{
+  grid-area: t;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+.fa-check{
+  font-size: 20px;
+}
+.fa-times{
+  font-size: 20px;
+}
+
+
+.chartsSection{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr ;
+  height: 100vh;
+  padding: 5px;
+  margin-top: 15px;
+  
+}
+
+.chart{
+  justify-self: center;
+  padding: 10px;
+}
+
+.navBar a  {
+  color: rgb(255, 255, 255);
+  text-decoration: none; 
+}
+
+.navBar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 8fr;
+  
+  background-color: black;
+  height: 50px;
+  margin-bottom: 7px;
+}
+
+.nav{
+  text-align: center;
+  padding-top:12px
+}
+
+.nav:hover{
+  background-color: rgb(34, 30, 32);
+}
+
+.actionSection{
+  margin-left: 30px;
+}
+.actionHeading{
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.updateSection{
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  margin-top: 10px;
+  width: 550px;
+}
+
+.actionButton{
+  text-align: center;
+
+  background-color: rgb(255, 215, 40);
+    padding-bottom: 2px;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.updateSectionSold{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin-top: 10px;
+  width: 550px;
+}
+
+.actionInputSections{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+  width: 250px;
+}
+
+.addButton{
+  background-color: rgb(255, 215, 40);
+    width: 250px;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    border-radius: 10px
+}
+
+.modal {
+  font-size: 12px;
+  color: white;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: 0;
+  font-size: 20px;
+}
+
+.modal input{
+  width: 15vw;
+  font-size: 20px;
+  background: transparent;
+  outline: 0;
+  color: white;
+  -webkit-appearance: none;
+  border: 0;
+  font-weight: 500;
+  border-bottom: 2px solid;
+  margin: auto;
+  max-width: 280px;
+  background-color: transparent;
+}
+
+.popup-content{
+  width: 40% !important;
+  background-color: black !important;
+  opacity: 0.8;
+  
+}
+
+.contentPopup{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 20px;
+  padding: 5px;
+
+}
+
+.popDeleteButton{
+  background-color: rgb(255, 40, 40);
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  margin-right: 4vw
+}
+
+.popUpdateButton{
+  background-color: rgb(255, 215, 40);
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+
+#Button:hover {
+  background-color: #7bdf39;
+}
+
+#Button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+#input{
+  margin-left: 5px;
+  padding: 5px;
+  background: transparent;
+  -webkit-appearance: none;
+  border: 0;
+  font-weight: 500;
+  border-bottom: 2px solid #9e9e9e87;
+  margin: auto;
+  max-width: 280px;
+  background-color: transparent; 
+  
+}
+
+
+select {
+  /* -webkit-appearance: button; */
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  /* background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(rgb(255, 255, 255), #F4F4F4 40%, #E5E5E5); */
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  color: #555;
+  font-size: inherit;
+  
+  overflow: hidden;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 150px;
+}
+
+select {
+  margin-left: 5px;
+  color: rgb(0, 0, 0);
+  /* background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(rgb(252, 250, 245), #faf9f5 40%, #eeede8); */
+  background-color: #faf9f5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding-left: 8px;
+}
+
+.mainFilter{
+  padding: 5px;
+  display: inline;
+}
+
+
+.chartTitle{
+  font-weight: bold;
+}
+
+
+#paginate-button{
+   float: right;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 5px;
+   cursor: pointer;
+}
