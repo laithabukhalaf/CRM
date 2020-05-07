@@ -1,4 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Built With:
+React
+MongoDB
+Express
+Node.js
+npm packages
 
 ## Available Scripts
 
